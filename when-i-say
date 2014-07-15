@@ -9,10 +9,16 @@ test -n "$delimiter" || delimiter=comma
 count=$3     # should be an integer
 test -n "$count" || count=2
 
-# alias espeak='espeak -s 180 -v en-us'
+rate=$4
+test -n "$rate" || rate=200
+
+if which espeak > /dev/null; then
+  alias espeak="espeak -s $rate -v en-us"
 # alias espeak='espeak -s 180 -v other/en-rp'
 # alias espeak='espeak -s 180 -v other/en-n'
-which espeak > /dev/null || alias espeak='say -r 190'
+else
+  alias espeak="say -r $rate"
+fi
 
 for i in $(seq 1 $count); do
   espeak "When I say '$value', you say '$delimiter'"
