@@ -12,6 +12,4 @@ deactivate() {
 
 clear
 # printf '\033[32mCommands\033[39m\n'
-echo Commands
-echo '  l : CR     LF  [rate]'
-echo '  c : value  ,   [rate]'
+./commands

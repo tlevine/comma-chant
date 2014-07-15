@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+echo Commands
+echo '  l : CR     LF  [rate]'
+echo '  c : value  ,   [rate]'

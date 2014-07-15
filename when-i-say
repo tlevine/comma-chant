@@ -28,3 +28,5 @@ for i in $(seq 1 $count); do
   espeak "$value"
   read
 done
+clear
+./commands
