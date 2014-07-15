@@ -1,5 +1,6 @@
 OLDPS1="$PS1"
-PS1='\033[32mcsv \033[35m>>>\033[39m '
+# PS1='\033[32mcsv \033[35m>>>\033[39m '
+PS1='csv >>> '
 alias l='./when-i-say "carriage return" "line feed" 2'
 alias c='./when-i-say value comma 2'
 
@@ -10,6 +11,7 @@ deactivate() {
 }
 
 clear
-printf '\033[32mCommands\033[39m\n'
+# printf '\033[32mCommands\033[39m\n'
+echo Commands
 echo '  l : CR     LF'
 echo '  c : value  ,'
