@@ -1,10 +1,10 @@
 #!/bin/sh
 
-delimiter=$1 # the word to say
-test -n "$delimiter" || delimiter=comma
-
-value=$2
+value=$1
 test -n "$value" || value=Value
+
+delimiter=$2
+test -n "$delimiter" || delimiter=comma
 
 count=$3     # should be an integer
 test -n "$count" || count=2
