@@ -4,10 +4,10 @@ alias espeak='espeak -s 180 -v en-us'
 # alias espeak='espeak -s 180 -v other/en-rp'
 # alias espeak='espeak -s 180 -v other/en-n'
 
-for i in $times; do
+for i in $(seq 1 $times); do
   espeak 'When I say value, you say comma'
-  espeak Comma
+  espeak Value
   read
-  espeak Comma
+  espeak Value
   read
 done
