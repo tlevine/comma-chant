@@ -1,10 +1,11 @@
 #!/bin/sh
 times=$1 # should be an integer
+alias espeak='espeak -s 300'
 
 for i in $times; do
-  read
   espeak 'When I say value, you say comma'
   espeak Comma
   read
   espeak Comma
+  read
 done
