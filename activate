@@ -1,2 +1,2 @@
-alias nl='./when-i-say "carriage return" "new line" 2'
+alias nl='./when-i-say "new line" "carriage return" 2'
 alias ,,='./when-i-say value comma 2'

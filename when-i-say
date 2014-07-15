@@ -14,9 +14,9 @@ alias espeak='espeak -s 180 -v en-us'
 # alias espeak='espeak -s 180 -v other/en-n'
 
 for i in $(seq 1 $count); do
-  espeak "When I say 'value', you say '$delimiter'"
-  espeak $value
+  espeak "When I say '$value', you say '$delimiter'"
+  espeak "$value"
   read
-  espeak $value
+  espeak "$value"
   read
 done
