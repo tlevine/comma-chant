@@ -1,6 +1,9 @@
-OLDPS1=$PS1
-PS1='\csv>
+OLDPS1="$PS1"
+PS1='\033[32mcsv \033[37m>>>\033[39m '
 alias l='./when-i-say "carriage return" "line feed" 2'
 alias c='./when-i-say value comma 2'
 deactivate() {
+  PS1="$OLDPS1"
+  unalias l
+  unalias c
 }
