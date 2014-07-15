@@ -9,6 +9,7 @@ deactivate() {
   unalias c
 }
 
+clear
 printf '\033[32mCommands\033[39m:\n'
 echo '  l : CR     LF'
 echo '  c : value  ,'
