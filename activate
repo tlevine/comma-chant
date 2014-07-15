@@ -1,2 +1,6 @@
-alias nl='./when-i-say "new line" "carriage return" 2'
-alias ,,='./when-i-say value comma 2'
+OLDPS1=$PS1
+PS1='\csv>
+alias l='./when-i-say "carriage return" "line feed" 2'
+alias c='./when-i-say value comma 2'
+deactivate() {
+}
