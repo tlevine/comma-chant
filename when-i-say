@@ -12,10 +12,11 @@ test -n "$count" || count=2
 # alias espeak='espeak -s 180 -v en-us'
 # alias espeak='espeak -s 180 -v other/en-rp'
 # alias espeak='espeak -s 180 -v other/en-n'
-which espeak > /dev/null || alias espeak=say
+which espeak > /dev/null || alias espeak='say -r 190'
 
 for i in $(seq 1 $count); do
   espeak "When I say '$value', you say '$delimiter'"
+  read
   espeak "$value"
   read
   espeak "$value"
