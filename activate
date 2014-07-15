@@ -1,0 +1,2 @@
+alias nl='./when-i-say "carriage return" "new line" 2'
+alias ,,='./when-i-say value comma 2'
