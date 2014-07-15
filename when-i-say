@@ -22,7 +22,7 @@ fi
 
 for i in $(seq 1 $count); do
   espeak "When I say '$value', you say '$delimiter'"
-  read
+  sleep 0
   espeak "$value"
   read
   espeak "$value"
